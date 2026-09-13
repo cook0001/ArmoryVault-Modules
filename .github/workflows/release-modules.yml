@@ -1,0 +1,53 @@
+name: Package and Release Modules
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name for release (e.g. v1.0.0)'
+        required: false
+        default: ''
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release-modules:
+    name: Package & Release Modular Extensions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Package Modular Extensions
+        run: node scripts/package-modules.js
+
+      - name: Create GitHub Release & Upload Assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME="${{ inputs.tag_name || github.ref_name }}"
+          echo "Releasing modules for tag: $TAG_NAME"
+
+          if gh release view "$TAG_NAME" >/dev/null 2>&1; then
+            echo "Release $TAG_NAME exists, uploading assets..."
+          else
+            gh release create "$TAG_NAME" \
+              --title "ArmoryVault Modules $TAG_NAME" \
+              --generate-notes || true
+          fi
+
+          gh release upload "$TAG_NAME" dist-modules/module-*.zip dist-modules/modules-index.json --clobber
+          echo "✅ Modules successfully released and uploaded to $TAG_NAME!"
