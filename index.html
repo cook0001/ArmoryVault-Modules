@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArmoryVault Modules Hub — Official Extensions &amp; Add-ons</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore, download, and contribute official pluggable modules for ArmoryVault Desktop: Reloading Workbench, Armorer & Maintenance, Ballistics Calculator, NFA Tracker, and ATF Bound Book." />
+  <meta name="keywords" content="ArmoryVault modules, firearm reloading software, ballistics calculator, ATF bound book, gun maintenance ledger, NFA tax stamp tracker" />
+  <meta name="author" content="Daniel C. (cook0001)" />
+  <meta name="theme-color" content="#060910" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cook0001.github.io/ArmoryVault-Modules/" />
+  <meta property="og:title" content="ArmoryVault Modules Hub — Official Extensions &amp; Add-ons" />
+  <meta property="og:description" content="Pluggable on-demand extensions for ArmoryVault Desktop. Lean core, zero bloat, encrypted archival." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path><rect x="14" y="2" width="8" height="8" rx="1"></rect></svg>
+        </div>
+        <span>ArmoryVault Modules</span>
+        <span class="brand-tag">Catalog v1.0.0</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#catalog" class="nav-link">Catalog</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#developers" class="nav-link">Create a Module</a></li>
+        <li><a href="https://cook0001.github.io/ArmoryVault/" target="_blank" rel="noopener" class="nav-link" style="color: var(--accent-cyan);">Core Desktop App ↗</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/cook0001/ArmoryVault-Modules" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="View Repository on GitHub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>Official Extension Registry &middot; 100% Free &amp; Open-Source</span>
+        </div>
+
+        <h1 class="hero-title">
+          Expand Your Vault with <br />
+          <span class="gradient-text">Specialized Modular Extensions</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Keep your base ArmoryVault installation lean and lightning-fast. Download precision reloading tools, ballistics solvers, armorer ledgers, and ATF compliance modules on-demand with zero application rebuilds.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary btn-lg">
+            <span>Explore Modules Catalog</span>
+          </a>
+          <a href="https://cook0001.github.io/ArmoryVault/" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+            <span>Get ArmoryVault Desktop</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="container" id="catalog" style="padding-bottom: 40px;">
+      <!-- Interactive Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search modules by name, keyword, or data key..." />
+        </div>
+
+        <div class="category-chips">
+          <button type="button" class="chip-btn active" data-cat="all">All Modules</button>
+          <button type="button" class="chip-btn" data-cat="bench">Bench &amp; Reloading</button>
+          <button type="button" class="chip-btn" data-cat="armorer">Armorer &amp; Maintenance</button>
+          <button type="button" class="chip-btn" data-cat="range">Range &amp; Ballistics</button>
+          <button type="button" class="chip-btn" data-cat="compliance">ATF Compliance</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Modules Grid -->
+      <div class="modules-grid" id="modules-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="arch-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Architecture &amp; Usage</span>
+          <h2 class="section-title">How In-App Modules Work</h2>
+          <p class="section-subtitle">
+            Engineered for seamless offline agility, rapid updates, and complete data safety.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">1-Click Download</h3>
+            <p class="step-desc">
+              Inside ArmoryVault Desktop, open the Module Center via the <strong>Blocks</strong> icon. Click <em>"Download &amp; Install"</em>. The app streams the official zip asset directly from GitHub Releases and unpacks it to your local application data directory.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Dynamic Route Mounting</h3>
+            <p class="step-desc">
+              Modules are code-split and loaded dynamically without recompiling or relaunching the core app. Newly discovered modules appear immediately in the sidebar navigation and command palette.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Encrypted Data Archiving</h3>
+            <p class="step-desc">
+              If you uninstall a module to free disk space, its data is not destroyed. Active keys are automatically extracted, encrypted with your vault master key, and archived so your data travels safely with automated .zip backups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer & Contributing Section -->
+    <section class="arch-section" id="developers" style="background: rgba(11, 15, 25, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Community &amp; Extensions</span>
+          <h2 class="section-title">Build Your Own Module</h2>
+          <p class="section-subtitle">
+            Create custom inventory tools, specialty calculators, or integration bridges using standard React and TypeScript.
+          </p>
+        </div>
+
+        <div class="code-card">
+<span style="color: #64748b;">// modules/my-specialty-tool/manifest.json</span>
+{
+  <span style="color: #38bdf8;">"id"</span>: <span style="color: #34d399;">"custom-choke-selector"</span>,
+  <span style="color: #38bdf8;">"name"</span>: <span style="color: #34d399;">"Shotgun Choke &amp; Patterning Guide"</span>,
+  <span style="color: #38bdf8;">"version"</span>: <span style="color: #34d399;">"1.0.0"</span>,
+  <span style="color: #38bdf8;">"minAppVersion"</span>: <span style="color: #34d399;">"2.9.0"</span>,
+  <span style="color: #38bdf8;">"category"</span>: <span style="color: #34d399;">"range"</span>,
+  <span style="color: #38bdf8;">"description"</span>: <span style="color: #34d399;">"Calculate constriction percentages and pattern densities at 40 yards."</span>,
+  <span style="color: #38bdf8;">"dataKeys"</span>: [<span style="color: #34d399;">"pattern_targets"</span>],
+  <span style="color: #38bdf8;">"entry"</span>: <span style="color: #34d399;">"index.tsx"</span>
+}
+        </div>
+
+        <div style="text-align: center;">
+          <a href="https://github.com/cook0001/ArmoryVault-Modules" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <span>Read Contribution Guide on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        &copy; 2026 ArmoryVault Modules. Released under the ISC / MIT License.
+      </div>
+      <div class="footer-links">
+        <a href="https://cook0001.github.io/ArmoryVault/" target="_blank" rel="noopener">Core Desktop Portal</a>
+        <a href="https://github.com/cook0001/ArmoryVault" target="_blank" rel="noopener">Desktop Repo</a>
+        <a href="https://github.com/cook0001/ArmoryVault-Modules" target="_blank" rel="noopener">Modules Repo</a>
+        <a href="https://armstrader.store" target="_blank" rel="noopener">ArmsTrader.store</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
