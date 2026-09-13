@@ -1,0 +1,101 @@
+{
+  "repository": "cook0001/ArmoryVault-Modules",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-13T20:23:42.045Z",
+  "modules": {
+    "ballistics": {
+      "id": "ballistics",
+      "name": "Ballistics Calculator",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "author": "ArmoryVault",
+      "category": "range",
+      "description": "Long-range exterior ballistics, trajectory tables, drop charts, wind deflection, and optic clicks.",
+      "dataKeys": [
+        "ballistic_profiles"
+      ],
+      "entry": "index.ts",
+      "filename": "module-ballistics.zip",
+      "sha256": "61474c81c5353d649737a97b646dbdd6a35110e30f287c87084103d865bd96fb",
+      "sizeBytes": 11559,
+      "sizeKb": "11.3 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-ballistics.zip"
+    },
+    "boundbook": {
+      "id": "boundbook",
+      "name": "FFL / C&R Bound Book",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "author": "ArmoryVault",
+      "category": "compliance",
+      "description": "ATF-compliant acquisition and disposition record book for collectors, C&R holders, and FFL licensees.",
+      "dataKeys": [
+        "bound_book_entries"
+      ],
+      "entry": "index.ts",
+      "filename": "module-boundbook.zip",
+      "sha256": "7b4e6a34d6e3a0dd500880263145063b2b4097cfe5720009aaf6be069cd2bcf5",
+      "sizeBytes": 6644,
+      "sizeKb": "6.5 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-boundbook.zip"
+    },
+    "maintenance": {
+      "id": "maintenance",
+      "name": "Armorer & Maintenance",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "author": "ArmoryVault",
+      "category": "armorer",
+      "description": "Round count telemetry, cleaning schedules, service logs, optic zero registry, and parts ledger.",
+      "dataKeys": [
+        "custom_schedule_presets"
+      ],
+      "entry": "index.ts",
+      "filename": "module-maintenance.zip",
+      "sha256": "97bfd4272b12b370120f36cf606391da9da6efa8dc878cd0a60ce9da1512177b",
+      "sizeBytes": 22536,
+      "sizeKb": "22.0 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-maintenance.zip"
+    },
+    "nfa": {
+      "id": "nfa",
+      "name": "NFA & Compliance Tracker",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "author": "ArmoryVault",
+      "category": "compliance",
+      "description": "ATF Form 1 and Form 4 tracker, tax stamp status, trust beneficiary records, and CLEO notifications.",
+      "dataKeys": [
+        "nfa_items"
+      ],
+      "entry": "index.ts",
+      "filename": "module-nfa.zip",
+      "sha256": "a128f96f63a37a4b62b15666b7ddc820e2606d7f9945f6260ed184e61d74eff4",
+      "sizeBytes": 6279,
+      "sizeKb": "6.1 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-nfa.zip"
+    },
+    "reloading": {
+      "id": "reloading",
+      "name": "Reloading Workbench",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0",
+      "author": "ArmoryVault",
+      "category": "bench",
+      "description": "Comprehensive reloading component inventory (powder, primers, brass, bullets), batch manufacturing, and load development ladders.",
+      "dataKeys": [
+        "components",
+        "load_recipes",
+        "load_ladder_tests",
+        "target_analyses",
+        "chrono_strings"
+      ],
+      "entry": "index.ts",
+      "filename": "module-reloading.zip",
+      "sha256": "82f991dc7aad85fc17fde9b6e09560afda1202e88dfb1dc45351d1a2c9b7290c",
+      "sizeBytes": 26171,
+      "sizeKb": "25.6 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-reloading.zip"
+    }
+  }
+}
