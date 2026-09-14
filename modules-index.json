@@ -1,7 +1,7 @@
 {
   "repository": "cook0001/ArmoryVault-Modules",
-  "version": "1.0.0",
-  "generatedAt": "2026-09-13T20:23:42.045Z",
+  "version": "1.1.0",
+  "generatedAt": "2026-09-14T00:23:47.963Z",
   "modules": {
     "ballistics": {
       "id": "ballistics",
@@ -14,12 +14,13 @@
       "dataKeys": [
         "ballistic_profiles"
       ],
-      "entry": "index.ts",
+      "entry": "module.bundle.js",
+      "bundleCompiledAt": "2026-09-14T00:23:48.082Z",
       "filename": "module-ballistics.zip",
-      "sha256": "61474c81c5353d649737a97b646dbdd6a35110e30f287c87084103d865bd96fb",
-      "sizeBytes": 11559,
-      "sizeKb": "11.3 KB",
-      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-ballistics.zip"
+      "sha256": "c30173982891e6a2add1d13ff4e323f5e07650bc3a5291ef35fc4a8e4f148886",
+      "sizeBytes": 28310,
+      "sizeKb": "27.6 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-ballistics.zip"
     },
     "boundbook": {
       "id": "boundbook",
@@ -32,12 +33,33 @@
       "dataKeys": [
         "bound_book_entries"
       ],
-      "entry": "index.ts",
+      "entry": "module.bundle.js",
+      "bundleCompiledAt": "2026-09-14T00:23:48.114Z",
       "filename": "module-boundbook.zip",
-      "sha256": "7b4e6a34d6e3a0dd500880263145063b2b4097cfe5720009aaf6be069cd2bcf5",
-      "sizeBytes": 6644,
-      "sizeKb": "6.5 KB",
-      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-boundbook.zip"
+      "sha256": "1b2f295988736e498439ec0651ebaffc6347f066a63c736cf82fc9cf8b378ad6",
+      "sizeBytes": 12002,
+      "sizeKb": "11.7 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-boundbook.zip"
+    },
+    "labels": {
+      "id": "labels",
+      "name": "Batch Label & QR Print Studio",
+      "version": "1.0.0",
+      "minAppVersion": "2.9.0",
+      "author": "ArmoryVault",
+      "category": "bench",
+      "description": "Batch print QR and barcode labels across Avery sheets (5160, 5163) and continuous thermal rolls for ammo cans, magazine racks, and vault storage.",
+      "dataKeys": [
+        "saved_label_templates"
+      ],
+      "entry": "module.bundle.js",
+      "icon": "Printer",
+      "bundleCompiledAt": "2026-09-14T00:23:48.136Z",
+      "filename": "module-labels.zip",
+      "sha256": "fb87d941c361277a82c87fa33e7b6639a18fa1a6c94639f489b9058c2b873438",
+      "sizeBytes": 13567,
+      "sizeKb": "13.2 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-labels.zip"
     },
     "maintenance": {
       "id": "maintenance",
@@ -50,12 +72,13 @@
       "dataKeys": [
         "custom_schedule_presets"
       ],
-      "entry": "index.ts",
+      "entry": "module.bundle.js",
+      "bundleCompiledAt": "2026-09-14T00:23:48.171Z",
       "filename": "module-maintenance.zip",
-      "sha256": "97bfd4272b12b370120f36cf606391da9da6efa8dc878cd0a60ce9da1512177b",
-      "sizeBytes": 22536,
-      "sizeKb": "22.0 KB",
-      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-maintenance.zip"
+      "sha256": "42f017bc38d9a3b29415a3c8dc3700564a0664bec0ee7c3cc000ec21fa8722a3",
+      "sizeBytes": 49507,
+      "sizeKb": "48.3 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-maintenance.zip"
     },
     "nfa": {
       "id": "nfa",
@@ -68,12 +91,53 @@
       "dataKeys": [
         "nfa_items"
       ],
-      "entry": "index.ts",
+      "entry": "module.bundle.js",
+      "bundleCompiledAt": "2026-09-14T00:23:48.200Z",
       "filename": "module-nfa.zip",
-      "sha256": "a128f96f63a37a4b62b15666b7ddc820e2606d7f9945f6260ed184e61d74eff4",
-      "sizeBytes": 6279,
-      "sizeKb": "6.1 KB",
-      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-nfa.zip"
+      "sha256": "25120f46ac973fa5aeb5c135b5428ef7b4a8f2175bfaea841223a7dff2e4c6f7",
+      "sizeBytes": 11099,
+      "sizeKb": "10.8 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-nfa.zip"
+    },
+    "optics": {
+      "id": "optics",
+      "name": "Optics & Zero Vault",
+      "version": "1.0.0",
+      "minAppVersion": "2.9.0",
+      "author": "ArmoryVault",
+      "category": "bench",
+      "description": "Log optic reticles, focal planes, zero distances, turret click values, torque specs, and battery health.",
+      "dataKeys": [
+        "optics_vault_inventory"
+      ],
+      "entry": "module.bundle.js",
+      "icon": "Scope",
+      "bundleCompiledAt": "2026-09-14T00:23:48.224Z",
+      "filename": "module-optics.zip",
+      "sha256": "e65ca325633068cb159a12c9fb05a9986dd35387d77de6b3aa6e2eb252422107",
+      "sizeBytes": 12201,
+      "sizeKb": "11.9 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-optics.zip"
+    },
+    "ranges": {
+      "id": "ranges",
+      "name": "Shooting Range & Facility Finder",
+      "version": "1.0.0",
+      "minAppVersion": "2.9.0",
+      "author": "ArmoryVault",
+      "category": "range",
+      "description": "Locate 2,539 verified shooting ranges by ZIP or state, view lane fees, tactical bays, amenities, and bookmark home facilities.",
+      "dataKeys": [
+        "saved_ranges"
+      ],
+      "entry": "module.bundle.js",
+      "icon": "Target",
+      "bundleCompiledAt": "2026-09-14T00:23:48.247Z",
+      "filename": "module-ranges.zip",
+      "sha256": "c43386159e1c9dd1ecb9c4a124ba542a201e1284d8cf54f3a291eb713f42461e",
+      "sizeBytes": 10642,
+      "sizeKb": "10.4 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-ranges.zip"
     },
     "reloading": {
       "id": "reloading",
@@ -90,12 +154,13 @@
         "target_analyses",
         "chrono_strings"
       ],
-      "entry": "index.ts",
+      "entry": "module.bundle.js",
+      "bundleCompiledAt": "2026-09-14T00:23:48.284Z",
       "filename": "module-reloading.zip",
-      "sha256": "82f991dc7aad85fc17fde9b6e09560afda1202e88dfb1dc45351d1a2c9b7290c",
-      "sizeBytes": 26171,
-      "sizeKb": "25.6 KB",
-      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-reloading.zip"
+      "sha256": "a74431f67380457ef968c3dad3e701ca65906cdf668f2f86f7df9b73152268ed",
+      "sizeBytes": 50569,
+      "sizeKb": "49.4 KB",
+      "downloadUrl": "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-reloading.zip"
     }
   }
 }

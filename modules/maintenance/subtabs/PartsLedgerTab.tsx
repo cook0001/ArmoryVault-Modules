@@ -1,9 +1,4 @@
-import {
-  Calendar,
-  ExternalLink,
-  History,
-  Search,
-} from 'lucide-react';
+import { Calendar, ExternalLink, FileText, History, Search } from 'lucide-react';
 import React, { memo, useMemo } from 'react';
 import type { Firearm, MaintenanceLog } from '@/types';
 
@@ -15,6 +10,7 @@ interface PartsLedgerTabProps {
   setHistoryTypeFilter: (val: string) => void;
   showCosts: boolean;
   onNavigateDetails: (id: number) => void;
+  onGenerateWorkOrder?: (firearm: Firearm, log: MaintenanceLog) => void;
 }
 
 export const PartsLedgerTab: React.FC<PartsLedgerTabProps> = memo(
@@ -26,6 +22,7 @@ export const PartsLedgerTab: React.FC<PartsLedgerTabProps> = memo(
     setHistoryTypeFilter,
     showCosts,
     onNavigateDetails,
+    onGenerateWorkOrder,
   }) => {
     // Filtered service history computed inside tab
     const filteredServiceHistory = useMemo(() => {
@@ -129,8 +126,8 @@ export const PartsLedgerTab: React.FC<PartsLedgerTabProps> = memo(
             <History size={48} color="#64748b" style={{ margin: '0 auto 1rem auto' }} />
             <h3 style={{ margin: '0 0 0.5rem 0' }}>No Service Logs Recorded</h3>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '400px', margin: '0 auto' }}>
-              Cleanings, repairs, and parts installations recorded via the Quick Service modal
-              will populate here in chronological order.
+              Cleanings, repairs, and parts installations recorded via the Quick Service modal will
+              populate here in chronological order.
             </p>
           </div>
         ) : (
@@ -212,9 +209,7 @@ export const PartsLedgerTab: React.FC<PartsLedgerTabProps> = memo(
 
                       <td style={{ padding: '0.75rem 1rem' }}>
                         <div style={{ fontWeight: 500 }}>
-                          {log.installed_part_details ||
-                            log.repaired_part ||
-                            'Maintenance service'}
+                          {log.installed_part_details || log.repaired_part || 'Maintenance service'}
                         </div>
                       </td>
 
@@ -241,24 +236,46 @@ export const PartsLedgerTab: React.FC<PartsLedgerTabProps> = memo(
                         </td>
                       )}
 
-                      <td style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>
-                        <button
-                          type="button"
-                          className="btn-secondary"
-                          onClick={() => {
-                            if (firearm.id != null) onNavigateDetails(firearm.id);
-                          }}
-                          style={{
-                            padding: '0.25rem 0.5rem',
-                            fontSize: '0.75rem',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '0.3rem',
-                          }}
-                        >
-                          <ExternalLink size={12} />
-                          <span>Firearm</span>
-                        </button>
+                      <td style={{ padding: '0.75rem 1rem', textAlign: 'right', whiteSpace: 'nowrap' }}>
+                        <div style={{ display: 'inline-flex', gap: '0.4rem', justifyContent: 'flex-end' }}>
+                          {onGenerateWorkOrder && (
+                            <button
+                              type="button"
+                              className="btn-secondary"
+                              onClick={() => onGenerateWorkOrder(firearm, log)}
+                              title="Export Official Armorer Work Order & Inspection Certificate PDF"
+                              style={{
+                                padding: '0.25rem 0.5rem',
+                                fontSize: '0.75rem',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '0.3rem',
+                                color: '#38bdf8',
+                                borderColor: 'rgba(56, 189, 248, 0.3)',
+                              }}
+                            >
+                              <FileText size={12} />
+                              <span>Work Order</span>
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            className="btn-secondary"
+                            onClick={() => {
+                              if (firearm.id != null) onNavigateDetails(firearm.id);
+                            }}
+                            style={{
+                              padding: '0.25rem 0.5rem',
+                              fontSize: '0.75rem',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '0.3rem',
+                            }}
+                          >
+                            <ExternalLink size={12} />
+                            <span>Firearm</span>
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   ))}

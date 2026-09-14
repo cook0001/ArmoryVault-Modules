@@ -17,13 +17,14 @@ This repository allows specialized features to be developed, maintained, updated
 
 ## Included Modules
 
-| Module ID | Module Name | Category | Description | Data Keys | Package Size |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `reloading` | **Reloading Workbench** | `bench` | Powder, primers, brass, bullets inventory, multi-unit conversions, batch manufacturing deductions, and load development ladders. | `components`, `load_recipes`, `load_ladder_tests` | ~25.6 KB |
-| `maintenance` | **Armorer & Maintenance** | `armorer` | Round count telemetry, cleaning schedules, service logs, optic torque & zero registry, and parts ledger. | `custom_schedule_presets`, `maintenance_logs` | ~22.0 KB |
-| `ballistics` | **Ballistics Calculator** | `range` | Exterior trajectory solver utilizing standard G1 and G7 ballistic coefficients, density altitude compensation, and optic click charts. | `ballistic_profiles` | ~11.3 KB |
-| `nfa` | **NFA Compliance Tracker** | `compliance` | ATF Form 1 and Form 4 tracker, tax stamp archives, trust beneficiary records, suppressor wear, and CLEO notifications. | `nfa_items` | ~12.1 KB |
-| `boundbook` | **FFL / C&R Bound Book** | `compliance` | ATF-compliant acquisition and disposition record book for collectors, C&R holders, and FFL licensees (27 CFR Part 478). | `bound_book_entries` | ~6.5 KB |
+| `reloading` | **Reloading Workbench** | `bench` | Powder, primers, brass, bullets inventory, multi-unit conversions, batch manufacturing deductions, and load development ladders. | `components`, `load_recipes`, `load_ladder_tests` | ~49.4 KB |
+| `maintenance` | **Armorer & Maintenance** | `armorer` | Round count telemetry, cleaning schedules, service logs, optic torque & zero registry, parts ledger, and Typst work order generation. | `custom_schedule_presets`, `maintenance_logs` | ~48.3 KB |
+| `ballistics` | **Ballistics Calculator** | `range` | Exterior trajectory solver utilizing standard G1 and G7 ballistic coefficients, density altitude compensation, interactive reticle holdover HUD, and optic click charts. | `ballistic_profiles` | ~27.6 KB |
+| `nfa` | **NFA Compliance Tracker** | `compliance` | ATF Form 1 and Form 4 tracker, tax stamp archives, trust beneficiary records, suppressor wear, and CLEO notifications. | `nfa_items` | ~10.8 KB |
+| `boundbook` | **FFL / C&R Bound Book** | `compliance` | ATF-compliant acquisition and disposition record book for collectors, C&R holders, and FFL licensees (27 CFR Part 478). | `bound_book_entries` | ~11.7 KB |
+| `optics` | **Optics & Zero Vault** | `bench` | Optical devices registry, zero distance profiles, turret click values (MRAD/MOA), optic torque specs, and battery replacement schedules. | `optic_profiles` | ~11.9 KB |
+| `ranges` | **Shooting Range & Facility Finder** | `range` | Directory search across 2,539 verified shooting facilities, amenity filters (1,000+ yd, tactical bays, chrono), home range bookmarking, and lane fees. | `saved_ranges` | ~10.4 KB |
+| `labels` | **Batch Label & QR Print Studio** | `bench` | Batch prints vector QR codes and barcodes for ammo boxes, magazines, storage cans, and firearms across Avery sheets and continuous thermal rolls. | `saved_label_templates` | ~13.2 KB |
 
 ---
 

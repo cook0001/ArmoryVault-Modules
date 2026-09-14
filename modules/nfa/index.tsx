@@ -1,18 +1,17 @@
 import React from 'react';
 import { NfaTrackerNavIcon } from '@/components/CustomIcons';
-import { ArmoryModule } from '../registry/types';
+import { ArmoryModule } from '../types';
 import manifest from './manifest.json';
+import { NfaTracker } from './NfaTracker';
 
-export const NfaTracker = React.lazy(() =>
-  import('@/pages/NfaTracker').then((m) => ({ default: m.NfaTracker }))
-);
+export { NfaTracker };
 
 export const nfaModule: ArmoryModule = {
   manifest: manifest as any,
   routes: [
     {
       path: '/nfa-tracker',
-      element: NfaTracker,
+      element: NfaTracker as any,
     },
   ],
   navItems: [

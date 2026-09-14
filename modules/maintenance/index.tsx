@@ -1,18 +1,17 @@
 import React from 'react';
 import { MaintenanceNavIcon } from '@/components/CustomIcons';
-import { ArmoryModule } from '../registry/types';
+import { ArmoryModule } from '../types';
 import manifest from './manifest.json';
+import { MaintenanceDashboard } from './MaintenanceDashboard';
 
-export const MaintenanceDashboard = React.lazy(() =>
-  import('@/pages/MaintenanceDashboard').then((m) => ({ default: m.MaintenanceDashboard }))
-);
+export { MaintenanceDashboard };
 
 export const maintenanceModule: ArmoryModule = {
   manifest: manifest as any,
   routes: [
     {
       path: '/maintenance',
-      element: MaintenanceDashboard,
+      element: MaintenanceDashboard as any,
     },
   ],
   navItems: [

@@ -1,18 +1,17 @@
 import React from 'react';
 import { BoundBookNavIcon } from '@/components/CustomIcons';
-import { ArmoryModule } from '../registry/types';
+import { ArmoryModule } from '../types';
 import manifest from './manifest.json';
+import { BoundBook } from './BoundBook';
 
-export const BoundBook = React.lazy(() =>
-  import('@/pages/BoundBook').then((m) => ({ default: m.BoundBook }))
-);
+export { BoundBook };
 
 export const boundbookModule: ArmoryModule = {
   manifest: manifest as any,
   routes: [
     {
       path: '/bound-book',
-      element: BoundBook,
+      element: BoundBook as any,
     },
   ],
   navItems: [

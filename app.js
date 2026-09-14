@@ -67,6 +67,17 @@ const FALLBACK_CATALOG = {
       filename: "module-boundbook.zip",
       sha256: "7b4e6a34d6e3a0dd500880263145063b2b4097cfe5720009aaf6be069cd2bcf5",
       downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-boundbook.zip"
+    },
+    optics: {
+      id: "optics",
+      name: "Optics & Zero Vault",
+      version: "1.0.0",
+      category: "bench",
+      description: "Dedicated registry for precision rifle scopes, red dots, LPVOs, and iron sights. Log reticle patterns, focal planes (FFP/SFP), zero distances, turret click adjustments (MRAD/MOA), mounting torque specs, and battery health.",
+      dataKeys: ["optics_vault_inventory"],
+      sizeKb: "11.9 KB",
+      filename: "module-optics.zip",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-optics.zip"
     }
   }
 };

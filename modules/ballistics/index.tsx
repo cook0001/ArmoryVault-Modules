@@ -1,18 +1,17 @@
 import React from 'react';
 import { BallisticsNavIcon } from '@/components/CustomIcons';
-import { ArmoryModule } from '../registry/types';
+import { ArmoryModule } from '../types';
 import manifest from './manifest.json';
+import { BallisticsCalculator } from './BallisticsCalculator';
 
-export const BallisticsCalculator = React.lazy(() =>
-  import('@/pages/BallisticsCalculator').then((m) => ({ default: m.BallisticsCalculator }))
-);
+export { BallisticsCalculator };
 
 export const ballisticsModule: ArmoryModule = {
   manifest: manifest as any,
   routes: [
     {
       path: '/ballistics',
-      element: BallisticsCalculator,
+      element: BallisticsCalculator as any,
     },
   ],
   navItems: [

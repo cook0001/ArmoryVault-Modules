@@ -1,26 +1,22 @@
 import React from 'react';
 import { LoadDevNavIcon } from '@/components/CustomIcons';
-import { ArmoryModule } from '../registry/types';
+import { ArmoryModule } from '../types';
 import manifest from './manifest.json';
+import { ReloadingComponents } from './ReloadingComponents';
+import { LoadDevelopment } from './LoadDevelopment';
 
-export const ReloadingComponents = React.lazy(() =>
-  import('@/pages/ReloadingComponents').then((m) => ({ default: m.ReloadingComponents }))
-);
-
-export const LoadDevelopment = React.lazy(() =>
-  import('@/pages/LoadDevelopment').then((m) => ({ default: m.LoadDevelopment }))
-);
+export { ReloadingComponents, LoadDevelopment };
 
 export const reloadingModule: ArmoryModule = {
   manifest: manifest as any,
   routes: [
     {
       path: '/components',
-      element: ReloadingComponents,
+      element: ReloadingComponents as any,
     },
     {
       path: '/load-development',
-      element: LoadDevelopment,
+      element: LoadDevelopment as any,
     },
   ],
   navItems: [
