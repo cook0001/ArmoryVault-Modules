@@ -5,7 +5,7 @@
 // Fallback catalog in case of CORS or local file:// protocol
 const FALLBACK_CATALOG = {
   repository: "cook0001/ArmoryVault-Modules",
-  version: "1.0.0",
+  version: "1.1.0",
   generatedAt: new Date().toISOString(),
   modules: {
     reloading: {
@@ -14,11 +14,11 @@ const FALLBACK_CATALOG = {
       version: "1.0.0",
       category: "bench",
       description: "Precision metallic reloading component inventory with dynamic multi-unit powder conversions (grains, lbs, kg), multi-ingredient batch manufacturing deduction, and interactive charge ladder development.",
-      dataKeys: ["components", "load_ladders"],
-      sizeKb: "25.6 KB",
+      dataKeys: ["components", "load_recipes", "load_ladder_tests"],
+      sizeKb: "49.4 KB",
       filename: "module-reloading.zip",
-      sha256: "cf30e2f5b43da19f563d3f9479b63a94828f731c34a260840b2f5b084931a293",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-reloading.zip"
+      sha256: "a74431f67380457ef968c3dad3e701ca65906cdf668f2f86f7df9b73152268ed",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-reloading.zip"
     },
     maintenance: {
       id: "maintenance",
@@ -27,10 +27,10 @@ const FALLBACK_CATALOG = {
       category: "armorer",
       description: "Round-count telemetry, scheduled maintenance intervals with dynamic 'Due Soon' thresholds, service parts ledger, and optic torque & zero specification registry.",
       dataKeys: ["custom_schedule_presets", "maintenance_logs"],
-      sizeKb: "22.0 KB",
+      sizeKb: "48.3 KB",
       filename: "module-maintenance.zip",
-      sha256: "97bfd4272b12b370120f36cf606391da9da6efa8dc878cd0a60ce9da1512177b",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-maintenance.zip"
+      sha256: "42f017bc38d9a3b29415a3c8dc3700564a0664bec0ee7c3cc000ec21fa8722a3",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-maintenance.zip"
     },
     ballistics: {
       id: "ballistics",
@@ -39,10 +39,10 @@ const FALLBACK_CATALOG = {
       category: "range",
       description: "Full aerodynamic exterior trajectory solver utilizing standard G1 and G7 ballistic coefficient drag models, density altitude compensation, bullet drop tables, and MOA/MRAD click charts.",
       dataKeys: ["ballistic_profiles"],
-      sizeKb: "11.3 KB",
+      sizeKb: "27.6 KB",
       filename: "module-ballistics.zip",
-      sha256: "61474c81c5353d649737a97b646dbdd6a35110e30f287c87084103d865bd96fb",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-ballistics.zip"
+      sha256: "c30173982891e6a2add1d13ff4e323f5e07650bc3a5291ef35fc4a8e4f148886",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-ballistics.zip"
     },
     nfa: {
       id: "nfa",
@@ -51,10 +51,10 @@ const FALLBACK_CATALOG = {
       category: "compliance",
       description: "Dedicated tracking for ATF Form 1 (manufacture) and Form 4 (transfer) items, tax stamp document archives, trust vs. individual registration status, suppressor baffle wear, and CLEO notifications.",
       dataKeys: ["nfa_items"],
-      sizeKb: "12.1 KB",
+      sizeKb: "10.8 KB",
       filename: "module-nfa.zip",
-      sha256: "0c0c660f3805f1593361dfdcffda06c043e62057989d97036a1323ca5530f2f7",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-nfa.zip"
+      sha256: "25120f46ac973fa5aeb5c135b5428ef7b4a8f2175bfaea841223a7dff2e4c6f7",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-nfa.zip"
     },
     boundbook: {
       id: "boundbook",
@@ -63,10 +63,10 @@ const FALLBACK_CATALOG = {
       category: "compliance",
       description: "Curio & Relic (03 FFL) and commercial compliance ledger recording firearm acquisition, disposition dates, FFL numbers, and tamper-resistant audit logs adhering to 27 CFR Part 478.",
       dataKeys: ["bound_book_entries"],
-      sizeKb: "6.5 KB",
+      sizeKb: "11.7 KB",
       filename: "module-boundbook.zip",
-      sha256: "7b4e6a34d6e3a0dd500880263145063b2b4097cfe5720009aaf6be069cd2bcf5",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-boundbook.zip"
+      sha256: "1b2f295988736e498439ec0651ebaffc6347f066a63c736cf82fc9cf8b378ad6",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-boundbook.zip"
     },
     optics: {
       id: "optics",
@@ -77,7 +77,32 @@ const FALLBACK_CATALOG = {
       dataKeys: ["optics_vault_inventory"],
       sizeKb: "11.9 KB",
       filename: "module-optics.zip",
-      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.0.0/module-optics.zip"
+      sha256: "e65ca325633068cb159a12c9fb05a9986dd35387d77de6b3aa6e2eb252422107",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-optics.zip"
+    },
+    ranges: {
+      id: "ranges",
+      name: "Shooting Range & Facility Finder",
+      version: "1.0.0",
+      category: "range",
+      description: "Directory search across 2,539 verified shooting facilities, amenity filters (1,000+ yd, tactical bays, chrono), home range bookmarking, and lane fees.",
+      dataKeys: ["saved_ranges"],
+      sizeKb: "10.4 KB",
+      filename: "module-ranges.zip",
+      sha256: "c43386159e1c9dd1ecb9c4a124ba542a201e1284d8cf54f3a291eb713f42461e",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-ranges.zip"
+    },
+    labels: {
+      id: "labels",
+      name: "Batch Label & QR Print Studio",
+      version: "1.0.0",
+      category: "bench",
+      description: "Batch prints vector QR codes and barcodes for ammo boxes, magazines, storage cans, and firearms across Avery sheets and continuous thermal rolls.",
+      dataKeys: ["saved_label_templates"],
+      sizeKb: "13.2 KB",
+      filename: "module-labels.zip",
+      sha256: "fb87d941c361277a82c87fa33e7b6639a18fa1a6c94639f489b9058c2b873438",
+      downloadUrl: "https://github.com/cook0001/ArmoryVault-Modules/releases/download/v1.1.0/module-labels.zip"
     }
   }
 };
